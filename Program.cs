@@ -10,7 +10,7 @@ internal class Program
 
         // Заполняем текущую колоду копиями карт
         for (int i = 1; i < deck.GetCount() + 1; i++) currentDeck.AddCard(deck.GetCardAtNumber(i));
-        
+
         // Цикл взятия карт игроком
         string StopWord = null;
         do
@@ -19,7 +19,7 @@ internal class Program
             Console.WriteLine($"Здравствуйте! Сейчас в колоде {currentDeck.GetCount()} карт!" +
                               $"\nВы можете взять {player.MaxCurrentTakenCount}. Какую выберете?");
 
-            var CardNumber = Console.ReadLine();
+            string? CardNumber = Console.ReadLine();
 
             if (CardNumber == "Stop")
             {
@@ -28,7 +28,6 @@ internal class Program
             }
             else if (Convert.ToInt32(CardNumber) <= currentDeck.GetCount() && Convert.ToInt32(CardNumber) > 0)
             {
-                
                 player.TakeCard(currentDeck.GetCardAtNumber(Convert.ToInt32(CardNumber)));
                 currentDeck.RemoveCard(Convert.ToInt32(CardNumber));
             }
@@ -40,7 +39,7 @@ internal class Program
 
             player.TakenCount++;
             player.MaxCurrentTakenCount--;
-        } while ((player.TakenCount < player.MaxTakenCount) && StopWord != "Stop");
+        } while (player.TakenCount < player.MaxTakenCount && StopWord != "Stop");
 
         Console.WriteLine(new string('-', 20));
         Console.WriteLine("Взятые карты:");

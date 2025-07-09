@@ -41,7 +41,7 @@ public class Deck
         new("Clubs", "7"),
         new("Clubs", "6")
     };
-    
+
     public int GetCount()
     {
         return _cardsDeck.Length;

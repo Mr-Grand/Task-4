@@ -18,7 +18,7 @@ public class Player
         get => _maxTakenCount;
         set => _maxTakenCount = value;
     }
-        
+
     public int MaxCurrentTakenCount
     {
         get => _maxCurrentTakenCount;
@@ -29,7 +29,7 @@ public class Player
     {
         _takenCards.Add(card);
     }
-    
+
     public void ShowCards()
     {
         foreach (Card card in _takenCards)
