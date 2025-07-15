@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Task-4-Deck")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3f279653cc750ac1c2cb3a51b8316d14b79e7aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a877d9f6c6ce4635b5e0cf36eeacbf292c0b20fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Task-4-Deck")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Task-4-Deck")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
