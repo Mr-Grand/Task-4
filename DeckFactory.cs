@@ -5,7 +5,7 @@ public class DeckFactory
     public Deck CreateStandardDeck()
     {
         Deck standardDeck = new();
-        
+
         standardDeck.AddCard(new Card("Diamonds", "T"));
         standardDeck.AddCard(new Card("Diamonds", "K"));
         standardDeck.AddCard(new Card("Diamonds", "J"));
@@ -42,7 +42,7 @@ public class DeckFactory
         standardDeck.AddCard(new Card("Clubs", "8"));
         standardDeck.AddCard(new Card("Clubs", "7"));
         standardDeck.AddCard(new Card("Clubs", "6"));
-        
+
         return standardDeck;
     }
 }

@@ -2,5 +2,5 @@
 
 public class Game
 {
-    public const int MAX_TAKEN_COUNT  = 4;
+    public const int MaxTakenCount = 4;
 }
