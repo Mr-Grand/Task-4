@@ -9,9 +9,17 @@ public class Deck
         return _cardsDeck.Count;
     }
 
-    public Card GetCardAtNumber(int number)
+    public Card GetCardAtPosition(int position)
     {
-        return _cardsDeck.ElementAt(number - 1);
+        if (position >= 1 && position <= _cardsDeck.Count)
+        {
+            return _cardsDeck.ElementAt(position - 1);
+        }
+        else
+        {
+            Console.WriteLine("Invalid position");
+            return new Card("None","0");
+        }
     }
     
     public void AddCard(Card card)
