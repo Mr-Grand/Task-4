@@ -10,7 +10,7 @@ internal class Program
 
         Deck deckCurrent = new();
         // Заполняем текущую колоду копиями карт
-        for (int i = 1; i < deckTemplate.GetCount() + 1; i++)
+        for (int i = 0; i < deckTemplate.GetCount(); i++)
             deckCurrent.AddCard(deckTemplate[i]);
 
         // Цикл взятия карт игроком

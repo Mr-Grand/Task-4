@@ -11,8 +11,28 @@ public class Deck
 
     public Card this[int index]
     {
-        get => _cardsDeck[index];
-        set => _cardsDeck[index] = value;
+        get
+        {
+            if (index >= 0 && index < _cardsDeck.Count)
+            {
+                return _cardsDeck[index];
+            }
+            else
+            {
+                throw new IndexOutOfRangeException();
+            }
+        }
+        set
+        {
+            if (index >= 0 && index < _cardsDeck.Count)
+            {
+                _cardsDeck[index] = value;
+            }
+            else
+            {
+                throw new IndexOutOfRangeException();
+            }
+        }
     }
 
     public Card GetCardAtPosition(int position)
