@@ -3,6 +3,7 @@
 public class Player
 {
     private List<Card> _takenCards = new();
+    
     public int TakenCount { get; set; } = 0;
 
     public void TakeCard(Card card)
